@@ -4,7 +4,7 @@
 
 In Terraform, a workspace is an environment that maintains its own state file, allowing you to manage different sets of infrastructure within the same Terraform configuration. Workspaces are useful when you want to manage multiple environments (e.g., development, staging, production) or variations of infrastructure using the same codebase without having to create separate directories or duplicate configurations.
 
-#Key Concepts of Terraform Workspaces:
+# Key Concepts of Terraform Workspaces:
 
 Default Workspace: Every Terraform configuration starts with a single workspace named default. If you don't explicitly create or switch to another workspace, Terraform will use this default workspace.
 
@@ -64,4 +64,5 @@ Client-Specific Infrastructure: If you're managing infrastructure for multiple c
 State File Management: Each workspace has its own state file, so managing workspaces introduces the need to handle multiple state files.
 
 Workspace Limitations: Workspaces are best suited for scenarios where the infrastructure codebase is mostly the same across environments. If environments differ significantly, separate Terraform configurations might be more appropriate.
+
 Terraform workspaces offer a flexible way to manage different infrastructure variations without duplicating code, making it easier to manage complex environments and deployments.
