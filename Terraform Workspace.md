@@ -18,16 +18,19 @@ Workspace Names: Workspaces are identified by names, and you can switch between 
 
 1. Creating a New Workspace
 To create a new workspace, use the terraform workspace new command:
+
 $ terraform workspace new dev
 This command creates a new workspace named dev and switches to it.
 
 2. Switching Between Workspaces
 To switch to an existing workspace, use the terraform workspace select command:
+
 $ terraform workspace select staging
 This command switches to the staging workspace.
 
 3. Listing Workspaces
 To list all the workspaces in your current Terraform configuration, use:
+
 $ terraform workspace list
 This will display a list of all available workspaces and indicate the currently active workspace with an asterisk (*).
 
@@ -42,6 +45,7 @@ You can use the terraform.workspace built-in variable to conditionally configure
 
 5. Destroying a Workspace
 If you no longer need a workspace, you can delete it using:
+
 $ terraform workspace delete dev
 However, you must ensure that no resources are managed by that workspace before deleting it, as it will delete the associated state file.
 
