@@ -33,14 +33,8 @@ This will display a list of all available workspaces and indicate the currently 
 
 4. Using Workspaces in Configuration
 You can use the terraform.workspace built-in variable to conditionally configure resources based on the active workspace. For example, you might want to use different instance types for different environments:
-resource "aws_instance" "example" {
-  ami           = "ami-0c55b159cbfafe1f0"
-  instance_type = terraform.workspace == "prod" ? "t3.large" : "t2.micro"
 
-  tags = {
-    Name = "TerraformExample-${terraform.workspace}"
-  }
-}
+![image](https://github.com/user-attachments/assets/1cae1706-d179-460b-91d6-06c44f1e0c90)
 
 # In this example:
 # If the workspace is prod, the instance type will be t3.large.
