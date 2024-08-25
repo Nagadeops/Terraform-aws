@@ -28,18 +28,24 @@ This enables you to write a module once and apply it in different contexts, such
 Let's create a simple module that provisions an AWS EC2 instance.
 
 # Step 1: Create a directory for your module:
+
 ![image](https://github.com/user-attachments/assets/fae9ce14-b807-4eba-9ed9-4d7f1c518906)
 
 
 # Step 2: Define the Module’s Resources
+
 Inside the modules/ec2_instance directory, create the following files:
+
 1. main.tf: Defines the resources.
+   
    ![image](https://github.com/user-attachments/assets/190f83de-ac75-4ba2-a53c-b5f14333a495)
 
 2. variables.tf: Defines the input variables for the module.
+   
    ![image](https://github.com/user-attachments/assets/6694f640-2c73-4082-b2c5-8d234c880bd2)
 
 3. outputs.tf: Defines the outputs for the module.
+   
    ![image](https://github.com/user-attachments/assets/a87f3008-2ee4-432f-bbad-be6c96b3e96a)
 
 # Step 3: Use the Module in Your Root Module
