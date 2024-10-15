@@ -34,6 +34,5 @@
   
   Whereby build your filters in datasource
 
-# Step-03: Reference the datasource in ec2-instance.tf
+# Step-03: Create the necessary tf files as per this example and test the same.  
   
-  ami           = data.aws_ami.amzlinux.id 
